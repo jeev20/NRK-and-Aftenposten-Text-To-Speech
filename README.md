@@ -1,0 +1,1 @@
+"# This program scraps NRK articles. Converts the News articles to text. Saves the article text in newfile.txt file and converts text to speech and saves to Title.mp3, Heading.mp3 and Article.mp3 file. Enjoy listening to Norwegian News! " 
