@@ -7,8 +7,6 @@
                     #Saves the article text in Article.txt file
                     #Converts text to speech and saves to Title.mp3, Heading.mp3 and Article.mp3 file
 
-
-
 from bs4 import BeautifulSoup
 from urllib import *
 import urllib
@@ -54,8 +52,6 @@ def authors():
                 except:
                         return n
         
-        
-
 # loop to print article text
 def text():
 	t=""
@@ -88,11 +84,7 @@ file.write("\n")
 file.write(firsttext())
 file.write("\n")
 file.write(text())
-
-
 file.close()
-
-
 
 # Debugging
 print title()
@@ -107,17 +99,11 @@ print text()
 t = text()
 
 
-
-
-
-
-
 tts = gTTS(text= title, lang = "no")
 tts.save("Title.mp3")
 pygame.mixer.init()
 pygame.mixer.music.load("Title.mp3")
 pygame.mixer.music.play()
-
 
 tts = gTTS(text= firsttext, lang = "no")
 tts.save("Heading.mp3")
